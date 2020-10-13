@@ -1,11 +1,15 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/index/index",
+			"path": "pages/index/index"
+		},
+		{
+			"path": "pages/our/index",
 			"style": {
-				"navigationBarTitleText": "全国疫情"
+				"navigationBarTitleText": "我们"
 			}
-		},{
+		},
+		{
 			"path": "pages/people/index",
 			"style": {
 				"navigationBarTitleText": "用户列表"
@@ -19,8 +23,8 @@
 		"backgroundColor": "#ffffff",
 		"list": [
 			{
-				"pagePath": "pages/index/index",
-				"text": "全国疫情"
+				"pagePath": "pages/our/index",
+				"text": "我们"
 			},
 			{
 				"pagePath": "pages/people/index",

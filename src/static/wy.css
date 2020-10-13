@@ -1,0 +1,15 @@
+page{
+    font-size: 32rpx;
+    font-family: Microsoft Yahei;
+    --wyPink:  #ec9bad;
+    --wyYzred: #f03f24;
+}
+
+.wy-yzred{
+    color:  #f03f24;
+}
+
+.wy-yzred-border{
+    color:  #f03f24;
+    border: 1px solid currentColor;
+}
