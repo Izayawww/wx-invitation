@@ -6,7 +6,7 @@
           class="swiper-item uni-bg-red animate__animated fadeIn weeding-pah text-gray"
         >
         <view class="wy-flowerview wy-flexCol">
-          <image src="../../static/imgs/花环3.png" :class="['bg-flower animate__animated', currentSwipte === 0 ? 'animate__rotateIn' : '']"></image>
+          <image src="../../static/flower3.png" :class="['bg-flower animate__animated', currentSwipte === 0 ? 'animate__rotateIn' : '']"></image>
           <view :class="['animate__animated animate__slow', currentSwipte === 0 ? 'animate__flipInX' : '']">婚礼</view>
           <view :class="['animate__animated animate__slow', currentSwipte === 0 ? 'animate__flipInX' : '']">邀请</view>
         </view>
