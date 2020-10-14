@@ -5,6 +5,13 @@ page{
     --wyYzred: #f03f24;
 }
 
+.wy-flexCol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .wy-yzred{
     color:  #f03f24;
 }

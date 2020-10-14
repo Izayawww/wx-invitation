@@ -1,13 +1,17 @@
 <template>
-  <view class="wy-invitaion">
+  <view class="wy-invitaion animate__animated fadeIn">
     <swiper class="swiper photo-swiper" vertical @change="changeSwiper">
       <swiper-item>
         <view
-          class="swiper-item uni-bg-red animated fadeIn weeding-pah text-gray"
+          class="swiper-item uni-bg-red animate__animated fadeIn weeding-pah text-gray"
         >
-          <view class="animated fadeInUp">WEDDING INVITATION</view>
-          <view class="animated fadeInUp">
-            <view :class="['animated', currentSwipte === 0 ? 'zoomIn' : '']">
+        <view class="wy-flowerview wy-flexCol">
+          <image src="../../static/imgs/花环3.png" :class="['bg-flower animate__animated', currentSwipte === 0 ? 'animate__rotateIn' : '']"></image>
+          <view :class="['animate__animated animate__slow', currentSwipte === 0 ? 'animate__flipInX' : '']">婚礼</view>
+          <view :class="['animate__animated animate__slow', currentSwipte === 0 ? 'animate__flipInX' : '']">邀请</view>
+        </view>
+          <view class="animate__animated animate__fadeInUp">
+            <view :class="['animate__animated', currentSwipte === 1 ? 'animate__zoomIn' : '']">
               <text class="text-black">汪志强&杨丽娜</text>
             </view>
           </view>
@@ -15,11 +19,11 @@
       </swiper-item>
       <swiper-item>
         <view
-          class="swiper-item uni-bg-red animated fadeIn weeding-pah text-gray"
+          class="swiper-item uni-bg-red animate__animated fadeIn weeding-pah text-gray"
         >
-          <view class="animated fadeInUp">WEDDING INVITATION</view>
-          <view class="animated fadeInUp">
-            <view :class="['animated', currentSwipte === 1 ? 'zoomIn' : '']">
+          <view class="animate__animated animate__fadeInUp">WEDDING INVITATION</view>
+          <view class="animate__animated animate__fadeInUp">
+            <view :class="['animate__animated', currentSwipte === 1 ? 'animate__zoomIn' : '']">
               <text class="text-black">汪志强和</text>
               <text class="text-black">杨丽娜</text>
             </view>
@@ -27,7 +31,7 @@
             <view>2222年2月22日</view>
             <view>adfasdf</view> -->
           </view>
-          <view class="animated fadeInUp delay-1s">
+          <view class="animate__animated animate__fadeInUp animate__delay-1s">
             <button class="cu-btn round wy-yzred-border" @click="openLocation">
               地图导航
             </button>
@@ -123,7 +127,18 @@ export default {
 
 <style>
 .wy-invitaion {
-  font-size: 40rpx;
+  font-size: 42rpx;
+  padding: 42rpx 0;
+}
+.wy-flowerview{
+  position: relative;
+  height: 200rpx;
+  color: #333333;
+}
+.wy-flowerview .bg-flower{
+  position: absolute;
+  width: 200rpx;
+  height: 200rpx;
 }
 .photo-swiper {
   height: 100vh;

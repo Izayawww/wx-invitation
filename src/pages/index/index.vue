@@ -2,7 +2,7 @@
   <view class="wy-invitaion wy-welcome">
     <image src="../../static/logo.png" mode="aspectFill" class="wy-logo">
     <view class="wy-welcome-font">
-        我们结婚啦
+        <view class="animate__animated animate__tada">我们结婚啦</view>
         <view class="wy-welcome-bar"></view>
     </view>
   </view>
@@ -20,7 +20,7 @@ export default {
       uni.switchTab({
         url: "/pages/our/index",
       });
-    }, 998);
+    }, 1498);
   },
   methods: {},
 };
@@ -58,11 +58,11 @@ export default {
   top: 0;
   left: 0;
   position: absolute;
-  background: #990409;
+  background: #ec0409;
   border-radius: 8px;
   width: 0%;
   height: 100%;
-  animation: loading 1s linear;
+  animation: loading 1.5s linear;
 }
 
 @keyframes loading {
