@@ -6,7 +6,7 @@
           class="swiper-item uni-bg-red animate__animated fadeIn weeding-pah text-gray"
         >
         <view class="wy-flowerview wy-flexCol">
-          <image src="../../static/flower3.png" :class="['bg-flower animate__animated', currentSwipte === 0 ? 'animate__rotateIn' : '']"></image>
+          <image :src="`${baseImgUrl}flower3.png`" :class="['bg-flower animate__animated', currentSwipte === 0 ? 'animate__rotateIn' : '']"></image>
           <view :class="['animate__animated animate__slow', currentSwipte === 0 ? 'animate__flipInX' : '']">婚礼</view>
           <view :class="['animate__animated animate__slow', currentSwipte === 0 ? 'animate__flipInX' : '']">邀请</view>
         </view>
@@ -62,6 +62,7 @@ export default {
         "http://m8.music.126.net/20200115150755/b524d22ee808d96cda6dae0f00d9fe8f/ymusic/bdb6/4eb6/aabd/26e833f3fe2e76237b2ef5f815077ffb.mp3",
         "http://m8.music.126.net/20200115154645/5b46c04dc1ffaf8a0fbd1b8abe823910/ymusic/0459/045c/520c/330c359473365e50a368ef0d43bc612f.mp3",
       ],
+      baseImgUrl:'https://izaya-1256042946.cos.ap-chengdu.myqcloud.com/',
       latitude: 39.909,
       longitude: 116.39742,
       covers: [
