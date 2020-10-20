@@ -4,7 +4,7 @@ const db = cloud.database()
 const _ = db.command
 
 async function getGreetings(){
-  const res = await db.collection('greetings').orderBy('_id','desc').get();
+  const res = await db.collection('greetings').orderBy('slot','desc').get();
   return res
 }
 
@@ -18,14 +18,19 @@ async function getPeopleListBy(event){
 
 async function insertGreeting(event){
   const res = await db.collection('greetings').add({
-      data: event
+      data: {
+        gretting: event.gretting,
+        nickName: event.nickName,
+        avatarUrl: event.avatarUrl,
+        time: event.time,
+        slot: event.slot
+      }
   })
   return res
 }
 
 
 exports.main = async (event, context) => {
-    console.log(event,context)
     switch(event.action){
       case 'getGreetings' : return getGreetings();
       case 'getPeopleListBy' : return getPeopleListBy();
