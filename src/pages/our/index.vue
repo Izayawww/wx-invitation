@@ -2,18 +2,18 @@
   <view class="wy-invitaion animate__animated fadeIn">
     <swiper class="swiper photo-swiper" vertical @change="changeSwiper">
       <swiper-item>
-        <view
-          class="swiper-item uni-bg-red animate__animated fadeIn weeding-pah text-gray"
-        >
-        <view class="wy-flowerview wy-flexCol">
-          <image :src="`${baseImgUrl}flower3.png`" :class="['bg-flower animate__animated', currentSwipte === 0 ? 'animate__rotateIn' : '']"></image>
-          <view :class="['animate__animated animate__slow', currentSwipte === 0 ? 'animate__flipInX' : '']">婚礼</view>
-          <view :class="['animate__animated animate__slow', currentSwipte === 0 ? 'animate__flipInX' : '']">邀请</view>
-        </view>
-          <view class="animate__animated animate__fadeInUp">
-            <view :class="['animate__animated', currentSwipte === 1 ? 'animate__zoomIn' : '']">
-              <text class="text-black">汪志强&杨丽娜</text>
+        <view class="swiper-item">
+          <view class="flex justify-between padding-xl">
+            <view class="text-left text-lg">
+              <view :class="['animate__animated', currentSwipte === 0 ? 'animate__fadeInLeft' : '']">汪志强 ❤️ 杨丽娜</view>
+              <view :class="['animate__animated', currentSwipte === 0 ? 'animate__fadeInRight' : '']">我们结婚啦</view>
             </view>
+            <image class="wy-smicon" :src="`${baseImgUrl}heart1.png`"></image>
+          </view>
+          <view class="wy-imgcontent">
+            <image :class="['wy-smicon wy-abs_topleft animate__animated', currentSwipte === 0 ? 'animate__fadeInDown' : '']" :src="`${baseImgUrl}heart3.png`" mode="aspectFill"></image>
+            <image :class="['wy-hunsha animate__animated', currentSwipte === 0 ? 'animate__zoomIn' : '']" :src="`${baseImgUrl}hunsha1.jpeg`" mode="aspectFill"></image>
+            <image :class="['wy-smicon wy-abs_btmright animate__animated', currentSwipte === 0 ? 'animate__fadeInUp' : '']" :src="`${baseImgUrl}heart3.png`" mode="aspectFill"></image>
           </view>
         </view>
       </swiper-item>
@@ -21,7 +21,11 @@
         <view
           class="swiper-item uni-bg-red animate__animated fadeIn weeding-pah text-gray"
         >
-          <view class="animate__animated animate__fadeInUp">WEDDING INVITATION</view>
+          <view class="wy-flowerview wy-flexCol">
+            <image :src="`${baseImgUrl}flower3.png`" :class="['bg-flower animate__animated', currentSwipte === 1 ? 'animate__rotateIn' : '']"></image>
+            <view :class="['animate__animated ', currentSwipte === 1 ? 'animate__flipInX' : '']">婚礼</view>
+            <view :class="['animate__animated ', currentSwipte === 1 ? 'animate__flipInX' : '']">邀请</view>
+          </view>
           <view class="animate__animated animate__fadeInUp">
             <view :class="['animate__animated', currentSwipte === 1 ? 'animate__zoomIn' : '']">
               <text class="text-black">汪志强和</text>
@@ -130,11 +134,35 @@ export default {
 .wy-invitaion {
   font-size: 42rpx;
   padding: 42rpx 0;
+  background-color: #FFF;
 }
 .wy-flowerview{
   position: relative;
   height: 200rpx;
   color: #333333;
+}
+.wy-imgcontent{
+  position: relative;
+}
+.wy-abs_topleft{
+  position: absolute;
+  top: 10rpx;
+  left: 8rpx;
+}
+.wy-abs_btmright{
+  position: absolute;
+  bottom: 10rpx;
+  right: 8rpx;
+  transform: rotate(20deg);
+}
+.swiper-item .wy-smicon{
+  height: 100rpx;
+  width: 100rpx;
+  transform: rotate(-20deg);
+}
+.swiper-item .wy-hunsha{
+  height: 800rpx;
+  border-radius: 50% / 50% 0;
 }
 .wy-flowerview .bg-flower{
   position: absolute;
@@ -147,4 +175,5 @@ export default {
 .weeding-pah {
   text-align: center;
 }
+
 </style>

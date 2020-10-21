@@ -8,8 +8,8 @@
  * Copyright (c) 2020 Animate.css
  */
 page {
-    --animate-duration: 1.5s;
-    --animate-delay   : 1.5s;
+    --animate-duration: 2s;
+    --animate-delay   : 2s;
     --animate-repeat  : 1
 }
 
