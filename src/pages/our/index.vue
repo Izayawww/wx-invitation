@@ -41,26 +41,26 @@
                 currentSwipte === 0 ? 'animate__flipInX' : '',
               ]"
             >
-              <text class="text-black">汪志强和</text>
-              <text class="text-black">杨丽娜</text>
+              <text class="text-black">汪志强 &</text>
+              <text class="text-black"> 杨丽娜</text>
             </view>
             <view
               :class="[
-                'animate__animated animate__delay-2s',
+                'animate__animated animate__delay-1_6s',
                 currentSwipte === 0 ? 'animate__zoomIn' : '',
               ]"
               >谨定于</view
             >
             <view
               :class="[
-                'animate__animated  padding-tb-sm animate__delay-3s',
+                'animate__animated  padding-tb-sm animate__delay-2s',
                 currentSwipte === 0 ? 'animate__lightSpeedInLeft' : '',
               ]"
               >2021年5月20日 13时14分</view
             >
             <view
               :class="[
-                'animate__animated animate__delay-4s',
+                'animate__animated animate__delay-2_6s',
                 currentSwipte === 0 ? 'animate__lightSpeedInRight' : '',
               ]"
               >景德镇市伊隆大酒店举行婚礼</view
@@ -68,7 +68,7 @@
           </view>
           <view
             :class="[
-              'animate__animated animate__delay-5s padding-top-xl',
+              'animate__animated animate__delay-3s padding-top-xl',
               currentSwipte === 0 ? 'animate__fadeInUp' : '',
             ]"
           >
