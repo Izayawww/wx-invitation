@@ -5,6 +5,13 @@ page{
     --wyYzred: #f03f24;
 }
 
+.wy-bgview{
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
 .wy-flexCol{
     display: flex;
     flex-direction: column;

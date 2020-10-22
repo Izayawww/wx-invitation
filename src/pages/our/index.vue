@@ -2,43 +2,128 @@
   <view class="wy-invitaion animate__animated fadeIn">
     <swiper class="swiper photo-swiper" vertical @change="changeSwiper">
       <swiper-item>
-        <view class="swiper-item">
-          <view class="flex justify-between padding-xl">
-            <view class="text-left text-lg">
-              <view :class="['animate__animated', currentSwipte === 0 ? 'animate__fadeInLeft' : '']">汪志强 ❤️ 杨丽娜</view>
-              <view :class="['animate__animated', currentSwipte === 0 ? 'animate__fadeInRight' : '']">我们结婚啦</view>
-            </view>
-            <image class="wy-smicon" :src="`${baseImgUrl}heart1.png`"></image>
+        <view class="swiper-item weeding-pah weeding-pah-first">
+          <view
+            :style="{ 'background-image': `url(${baseImgUrl}bg1.png)` }"
+            :class="[
+              'wy-bgview animate__animated ',
+              currentSwipte === 0 ? 'animate__flipInY' : '',
+            ]"
+          ></view>
+
+          <view class="wy-flowerview wy-flexCol padding-top-xxl">
+            <image
+              :src="`${baseImgUrl}flower3.png`"
+              :class="[
+                'bg-flower animate__animated ',
+                currentSwipte === 0 ? 'animate__rotateIn' : '',
+              ]"
+            ></image>
+            <view
+              :class="[
+                'animate__animated animate__slow',
+                currentSwipte === 0 ? 'animate__flipInX' : '',
+              ]"
+              >婚礼</view
+            >
+            <view
+              :class="[
+                'animate__animated animate__slow',
+                currentSwipte === 0 ? 'animate__flipInX' : '',
+              ]"
+              >邀请</view
+            >
           </view>
-          <view class="wy-imgcontent">
-            <image :class="['wy-smicon wy-abs_topleft animate__animated', currentSwipte === 0 ? 'animate__fadeInDown' : '']" :src="`${baseImgUrl}heart3.png`" mode="aspectFill"></image>
-            <image :class="['wy-hunsha animate__animated', currentSwipte === 0 ? 'animate__zoomIn' : '']" :src="`${baseImgUrl}hunsha1.jpeg`" mode="aspectFill"></image>
-            <image :class="['wy-smicon wy-abs_btmright animate__animated', currentSwipte === 0 ? 'animate__fadeInUp' : '']" :src="`${baseImgUrl}heart3.png`" mode="aspectFill"></image>
+          <view>
+            <view
+              :class="[
+                'animate__animated padding-top-xxl padding-bottom-xl animate__delay-1s',
+                currentSwipte === 0 ? 'animate__flipInX' : '',
+              ]"
+            >
+              <text class="text-black">汪志强和</text>
+              <text class="text-black">杨丽娜</text>
+            </view>
+            <view
+              :class="[
+                'animate__animated animate__delay-2s',
+                currentSwipte === 0 ? 'animate__zoomIn' : '',
+              ]"
+              >谨定于</view
+            >
+            <view
+              :class="[
+                'animate__animated  padding-tb-sm animate__delay-3s',
+                currentSwipte === 0 ? 'animate__lightSpeedInLeft' : '',
+              ]"
+              >2021年5月20日 13时14分</view
+            >
+            <view
+              :class="[
+                'animate__animated animate__delay-4s',
+                currentSwipte === 0 ? 'animate__lightSpeedInRight' : '',
+              ]"
+              >景德镇市伊隆大酒店举行婚礼</view
+            >
+          </view>
+          <view
+            :class="[
+              'animate__animated animate__delay-5s padding-top-xl',
+              currentSwipte === 0 ? 'animate__fadeInUp' : '',
+            ]"
+          >
+            <button class="cu-btn round wy-yzred-border" @click="openLocation">
+              地图导航
+            </button>
           </view>
         </view>
       </swiper-item>
       <swiper-item>
-        <view
-          class="swiper-item uni-bg-red animate__animated fadeIn weeding-pah text-gray"
-        >
-          <view class="wy-flowerview wy-flexCol">
-            <image :src="`${baseImgUrl}flower3.png`" :class="['bg-flower animate__animated', currentSwipte === 1 ? 'animate__rotateIn' : '']"></image>
-            <view :class="['animate__animated ', currentSwipte === 1 ? 'animate__flipInX' : '']">婚礼</view>
-            <view :class="['animate__animated ', currentSwipte === 1 ? 'animate__flipInX' : '']">邀请</view>
-          </view>
-          <view class="animate__animated animate__fadeInUp">
-            <view :class="['animate__animated', currentSwipte === 1 ? 'animate__zoomIn' : '']">
-              <text class="text-black">汪志强和</text>
-              <text class="text-black">杨丽娜</text>
+        <view class="swiper-item">
+          <view class="flex justify-between padding-xl">
+            <view class="text-left text-lg">
+              <view
+                :class="[
+                  'animate__animated',
+                  currentSwipte === 1 ? 'animate__fadeInLeft' : '',
+                ]"
+                >汪志强 ❤️ 杨丽娜</view
+              >
+              <view
+                :class="[
+                  'animate__animated',
+                  currentSwipte === 1 ? 'animate__fadeInRight' : '',
+                ]"
+                >我们结婚啦</view
+              >
             </view>
-            <!-- <view>谨定于</view>
-            <view>2222年2月22日</view>
-            <view>adfasdf</view> -->
+            <image class="wy-smicon" :src="`${baseImgUrl}heart1.png`"></image>
           </view>
-          <view class="animate__animated animate__fadeInUp animate__delay-1s">
-            <button class="cu-btn round wy-yzred-border" @click="openLocation">
-              地图导航
-            </button>
+          <view class="wy-imgcontent">
+            <image
+              :class="[
+                'wy-smicon wy-abs_topleft animate__animated',
+                currentSwipte === 1 ? 'animate__fadeInDown' : '',
+              ]"
+              :src="`${baseImgUrl}heart3.png`"
+              mode="aspectFill"
+            ></image>
+            <image
+              :class="[
+                'wy-hunsha animate__animated',
+                currentSwipte === 1 ? 'animate__zoomIn' : '',
+              ]"
+              :src="`${baseImgUrl}hunsha1.jpeg`"
+              mode="aspectFill"
+            ></image>
+            <image
+              :class="[
+                'wy-smicon wy-abs_btmright animate__animated',
+                currentSwipte === 1 ? 'animate__fadeInUp' : '',
+              ]"
+              :src="`${baseImgUrl}heart3.png`"
+              mode="aspectFill"
+            ></image>
           </view>
         </view>
       </swiper-item>
@@ -66,7 +151,7 @@ export default {
         "http://m8.music.126.net/20200115150755/b524d22ee808d96cda6dae0f00d9fe8f/ymusic/bdb6/4eb6/aabd/26e833f3fe2e76237b2ef5f815077ffb.mp3",
         "http://m8.music.126.net/20200115154645/5b46c04dc1ffaf8a0fbd1b8abe823910/ymusic/0459/045c/520c/330c359473365e50a368ef0d43bc612f.mp3",
       ],
-      baseImgUrl:'https://izaya-1256042946.cos.ap-chengdu.myqcloud.com/',
+      baseImgUrl: "https://izaya-1256042946.cos.ap-chengdu.myqcloud.com/",
       latitude: 39.909,
       longitude: 116.39742,
       covers: [
@@ -133,38 +218,37 @@ export default {
 <style>
 .wy-invitaion {
   font-size: 42rpx;
-  padding: 42rpx 0;
-  background-color: #FFF;
+  background-color: #fff;
 }
-.wy-flowerview{
+.wy-flowerview {
   position: relative;
   height: 200rpx;
   color: #333333;
 }
-.wy-imgcontent{
+.wy-imgcontent {
   position: relative;
 }
-.wy-abs_topleft{
+.wy-abs_topleft {
   position: absolute;
   top: 10rpx;
   left: 8rpx;
 }
-.wy-abs_btmright{
+.wy-abs_btmright {
   position: absolute;
   bottom: 10rpx;
   right: 8rpx;
   transform: rotate(20deg);
 }
-.swiper-item .wy-smicon{
+.swiper-item .wy-smicon {
   height: 100rpx;
   width: 100rpx;
   transform: rotate(-20deg);
 }
-.swiper-item .wy-hunsha{
+.swiper-item .wy-hunsha {
   height: 800rpx;
   border-radius: 50% / 50% 0;
 }
-.wy-flowerview .bg-flower{
+.wy-flowerview .bg-flower {
   position: absolute;
   width: 200rpx;
   height: 200rpx;
@@ -176,4 +260,10 @@ export default {
   text-align: center;
 }
 
+/* .weeding-pah-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+} */
 </style>
