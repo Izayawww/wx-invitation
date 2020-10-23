@@ -1,6 +1,9 @@
 {
 	"pages": [
 		{
+			"path": "pages/index/index"
+		},
+		{
 			"path": "pages/our/index",
 			"style": {
 				"navigationBarTitleText": "我们"
@@ -11,9 +14,6 @@
 			"style": {
 				"navigationBarTitleText": "祝福"
 			}
-		},
-		{
-			"path": "pages/index/index"
 		},
 		{
 			"path": "pages/people/index",

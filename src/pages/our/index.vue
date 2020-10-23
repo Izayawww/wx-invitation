@@ -140,10 +140,10 @@
           </view>
         </view>
       </swiper-item>
-      <swiper-item>
+      <!-- <swiper-item>
         <view class="swiper-item">
           <view
-            :style="{ 'background-image': `url(${baseImgUrl}huakuang5.png)` }"
+            :style="{ 'background-image': `url(${baseImgUrl}huakuang5-removebg.png)` }"
             :class="[
               'wy-bgview animate__animated ',
               currentSwipte === 3 ? 'animate__zoomInRight' : '',
@@ -154,10 +154,10 @@
               'wy-abs_btmright animate__animated',
               currentSwipte === 3 ? 'animate__rotateInUpLeft' : '',
             ]"
-            :src="`${baseImgUrl}hunsha1.jpeg`"
+            :src="`${baseImgUrl}hunsha1-removebg.png`"
           ></image>
         </view>
-      </swiper-item>
+      </swiper-item> -->
     </swiper>
     <!-- <button @click="pause">暂停</button>
     <button @click="handleMusicPlay">下一首</button>-->
