@@ -1,6 +1,6 @@
 <template>
   <view class="wy-invitaion wy-welcome">
-    <image src="https://izaya-1256042946.cos.ap-chengdu.myqcloud.com/logo.png" mode="aspectFill" class="wy-logo">
+    <image src="https://izaya-1256042946.cos.ap-chengdu.myqcloud.com/wedding/logo.png" mode="aspectFill" class="wy-logo">
     <view class="wy-welcome-font">
         <view class="animate__animated animate__tada">我们结婚啦</view>
         <view class="wy-welcome-bar"></view>

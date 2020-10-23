@@ -3198,6 +3198,10 @@ scroll-view.cu-steps .cu-item {
 	padding-top: 100rpx;
 }
 
+.padding-top-xxxl {
+	padding-top: 180rpx;
+}
+
 .padding-right-xs {
 	padding-right: 10rpx;
 }

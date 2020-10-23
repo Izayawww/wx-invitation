@@ -4,12 +4,20 @@
       <swiper-item>
         <view class="swiper-item weeding-pah weeding-pah-first">
           <view
-            :style="{ 'background-image': `url(${baseImgUrl}bg1.png)` }"
+            :style="{ 'background-image': `url(${baseImgUrl}huakuang.png)` }"
             :class="[
               'wy-bgview animate__animated ',
               currentSwipte === 0 ? 'animate__flipInY' : '',
             ]"
           ></view>
+          <view
+            :class="[
+              'animate__animated padding-top-xxxl padding-bottom-xl animate__delay-1s',
+              currentSwipte === 0 ? 'animate__flipInX' : '',
+            ]"
+          >
+            <text class="text-black">汪志强 & 杨丽娜</text>
+          </view>
 
           <view class="wy-flowerview wy-flexCol padding-top-xxl">
             <image
@@ -17,56 +25,41 @@
               :class="[
                 'bg-flower animate__animated ',
                 currentSwipte === 0 ? 'animate__rotateIn' : '',
-              ]"
-            ></image>
+              ]"></image>
             <view
               :class="[
                 'animate__animated animate__slow',
                 currentSwipte === 0 ? 'animate__flipInX' : '',
               ]"
-              >婚礼</view
-            >
+              >婚礼</view>
             <view
               :class="[
                 'animate__animated animate__slow',
                 currentSwipte === 0 ? 'animate__flipInX' : '',
               ]"
-              >邀请</view
-            >
+              >邀请</view>
           </view>
           <view>
-            <view
-              :class="[
-                'animate__animated padding-top-xxl padding-bottom-xl animate__delay-1s',
-                currentSwipte === 0 ? 'animate__flipInX' : '',
-              ]"
-            >
-              <text class="text-black">汪志强 &</text>
-              <text class="text-black"> 杨丽娜</text>
-            </view>
-            <view
+            <!-- <view
               :class="[
                 'animate__animated animate__delay-1_6s',
                 currentSwipte === 0 ? 'animate__zoomIn' : '',
               ]"
-              >谨定于</view
-            >
+              >谨定于</view> -->
             <view
               :class="[
-                'animate__animated  padding-tb-sm animate__delay-2s',
+                'animate__animated  padding-top-xxl padding-bottom-sm animate__delay-2s',
                 currentSwipte === 0 ? 'animate__lightSpeedInLeft' : '',
               ]"
-              >2021年5月20日 13时14分</view
-            >
+              >2021年5月20日 13时14分</view>
             <view
               :class="[
                 'animate__animated animate__delay-2_6s',
                 currentSwipte === 0 ? 'animate__lightSpeedInRight' : '',
               ]"
-              >景德镇市伊隆大酒店举行婚礼</view
-            >
+              >景德镇市伊隆大酒店举行婚礼</view>
           </view>
-          <view
+          <!-- <view
             :class="[
               'animate__animated animate__delay-3s padding-top-xl',
               currentSwipte === 0 ? 'animate__fadeInUp' : '',
@@ -75,7 +68,7 @@
             <button class="cu-btn round wy-yzred-border" @click="openLocation">
               地图导航
             </button>
-          </view>
+          </view> -->
         </view>
       </swiper-item>
       <swiper-item>
@@ -106,32 +99,64 @@
                 currentSwipte === 1 ? 'animate__fadeInDown' : '',
               ]"
               :src="`${baseImgUrl}heart3.png`"
-              mode="aspectFill"
-            ></image>
+              mode="aspectFill"></image>
             <image
               :class="[
                 'wy-hunsha animate__animated',
                 currentSwipte === 1 ? 'animate__zoomIn' : '',
               ]"
-              :src="`${baseImgUrl}hunsha1.jpeg`"
-              mode="aspectFill"
-            ></image>
+              :src="`${baseImgUrl}hunsha3.jpeg`"
+              mode="aspectFill"></image>
             <image
               :class="[
                 'wy-smicon wy-abs_btmright animate__animated',
                 currentSwipte === 1 ? 'animate__fadeInUp' : '',
               ]"
               :src="`${baseImgUrl}heart3.png`"
-              mode="aspectFill"
-            ></image>
+              mode="aspectFill"></image>
           </view>
         </view>
       </swiper-item>
       <swiper-item>
-        <view class="swiper-item uni-bg-green">B</view>
+        <view class="swiper-item">
+          <view class="cu-chat height-100">
+            <view class="flex height-50">
+              <view
+                :class="['flex-sub animate__animated wy-imgview margin-sm',
+                  currentSwipte === 2 ? 'animate__rotateInDownLeft' : '',
+                ]"
+                :style="{ 'background-image': `url(${baseImgUrl}wy1.jpeg)` }"></view>
+              <view
+                :class="['flex-sub animate__animated wy-imgview margin-sm animate__delay-1s',
+                  currentSwipte === 2 ? 'animate__rotateInDownRight' : '',
+                ]"
+                :style="{ 'background-image': `url(${baseImgUrl}wy2.jpeg)` }"></view>
+            </view>
+            <view
+              :class="['animate__animated wy-imgview margin-sm animate__delay-1_6s',
+                currentSwipte === 2 ? 'animate__zoomInUp' : '',
+              ]"
+              :style="{ 'background-image': `url(${baseImgUrl}wy3.jpeg)` }"></view>
+          </view>
+        </view>
       </swiper-item>
       <swiper-item>
-        <view class="swiper-item uni-bg-blue">C</view>
+        <view class="swiper-item">
+          <view
+            :style="{ 'background-image': `url(${baseImgUrl}huakuang5.png)` }"
+            :class="[
+              'wy-bgview animate__animated ',
+              currentSwipte === 3 ? 'animate__zoomInRight' : '',
+            ]"
+          ></view>
+          <image
+            :class="[
+              'wy-abs_btmright animate__animated',
+              currentSwipte === 3 ? 'animate__rotateInUpLeft' : '',
+            ]"
+            :src="`${baseImgUrl}hunsha1.jpeg`"
+          ></image>
+        </view>
       </swiper-item>
     </swiper>
     <!-- <button @click="pause">暂停</button>
@@ -151,7 +176,8 @@ export default {
         "http://m8.music.126.net/20200115150755/b524d22ee808d96cda6dae0f00d9fe8f/ymusic/bdb6/4eb6/aabd/26e833f3fe2e76237b2ef5f815077ffb.mp3",
         "http://m8.music.126.net/20200115154645/5b46c04dc1ffaf8a0fbd1b8abe823910/ymusic/0459/045c/520c/330c359473365e50a368ef0d43bc612f.mp3",
       ],
-      baseImgUrl: "https://izaya-1256042946.cos.ap-chengdu.myqcloud.com/",
+      baseImgUrl:
+        "https://izaya-1256042946.cos.ap-chengdu.myqcloud.com/wedding/",
       latitude: 39.909,
       longitude: 116.39742,
       covers: [
@@ -238,6 +264,9 @@ export default {
   bottom: 10rpx;
   right: 8rpx;
   transform: rotate(20deg);
+}
+.swiper-item{
+  height: 100%;
 }
 .swiper-item .wy-smicon {
   height: 100rpx;

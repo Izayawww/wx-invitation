@@ -1,15 +1,32 @@
 page{
     font-size: 32rpx;
-    font-family: Microsoft Yahei;
+    font-family: cursive;
     --wyPink:  #ec9bad;
     --wyYzred: #f03f24;
 }
 
-.wy-bgview{
+.wy-imgview,.wy-bgview{
     height: 100%;
     width: 100%;
+}
+
+.wy-bgview{
     background-size: 100% 100%;
     position: absolute;
+}
+
+.wy-imgview{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.height-50{
+    height: 50%;
+}
+
+.height-100{
+    height: 100%;
 }
 
 .wy-flexCol{
