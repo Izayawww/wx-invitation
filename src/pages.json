@@ -14,31 +14,25 @@
 			"style": {
 				"navigationBarTitleText": "祝福"
 			}
-		},
-		{
-			"path": "pages/people/index",
-			"style": {
-				"navigationBarTitleText": "用户列表"
-			}
 		}
 	],
 	"tabBar": {
 		"color": "#7A7E83",
-		"selectedColor": "#3cc51f",
+		"selectedColor": "#ee9ca7",
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
 		"list": [
 			{
 				"pagePath": "pages/our/index",
-				"text": "我们"
+				"text": "我们",
+				"iconPath": "static/our.png",
+				"selectedIconPath": "static/our_sel.png"
 			},
 			{
 				"pagePath": "pages/greetings/index",
-				"text": "祝福"
-			},
-			{
-				"pagePath": "pages/people/index",
-				"text": "用户列表"
+				"text": "祝福",
+				"iconPath": "static/greeting.png",
+				"selectedIconPath": "static/greeting_sel.png"
 			}
 		]
 	},

@@ -16,7 +16,7 @@
               currentSwipte === 0 ? 'animate__flipInX' : '',
             ]"
           >
-            <text class="text-black">汪志强 & 杨丽娜</text>
+            <text class="text-black">汪** & 杨**</text>
           </view>
 
           <view class="wy-flowerview wy-flexCol padding-top-xxl">
@@ -80,7 +80,7 @@
                   'animate__animated',
                   currentSwipte === 1 ? 'animate__fadeInLeft' : '',
                 ]"
-                >汪志强 ❤️ 杨丽娜</view
+                >汪** ❤️ 杨**</view
               >
               <view
                 :class="[
@@ -172,10 +172,10 @@ export default {
       title: "Hello",
       currentIdx: 0,
       currentSwipte: 0,
-      musics: [
-        "http://m8.music.126.net/20200115150755/b524d22ee808d96cda6dae0f00d9fe8f/ymusic/bdb6/4eb6/aabd/26e833f3fe2e76237b2ef5f815077ffb.mp3",
-        "http://m8.music.126.net/20200115154645/5b46c04dc1ffaf8a0fbd1b8abe823910/ymusic/0459/045c/520c/330c359473365e50a368ef0d43bc612f.mp3",
-      ],
+      // musics: [
+      //   "http://m8.music.126.net/20200115150755/b524d22ee808d96cda6dae0f00d9fe8f/ymusic/bdb6/4eb6/aabd/26e833f3fe2e76237b2ef5f815077ffb.mp3",
+      //   "http://m8.music.126.net/20200115154645/5b46c04dc1ffaf8a0fbd1b8abe823910/ymusic/0459/045c/520c/330c359473365e50a368ef0d43bc612f.mp3",
+      // ],
       baseImgUrl:
         "https://izaya-1256042946.cos.ap-chengdu.myqcloud.com/wedding/",
       latitude: 39.909,
@@ -225,18 +225,18 @@ export default {
     radioChange(e, type) {
       this.peopleInfo[type] = e.detail.value;
     },
-    pause() {
-      innerAudioContext.pause();
-    },
-    handleMusicPlay() {
-      if (this.currentIdx >= this.musics.length - 1) {
-        this.currentIdx = 0;
-      } else {
-        ++this.currentIdx;
-      }
-      innerAudioContext.src = this.musics[this.currentIdx];
-      console.log(this.musics[this.currentIdx]);
-    },
+    // pause() {
+    //   innerAudioContext.pause();
+    // },
+    // handleMusicPlay() {
+    //   if (this.currentIdx >= this.musics.length - 1) {
+    //     this.currentIdx = 0;
+    //   } else {
+    //     ++this.currentIdx;
+    //   }
+    //   innerAudioContext.src = this.musics[this.currentIdx];
+    //   console.log(this.musics[this.currentIdx]);
+    // },
   },
 };
 </script>

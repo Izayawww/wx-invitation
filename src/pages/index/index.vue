@@ -17,9 +17,12 @@ export default {
   },
   onLoad() {
     setTimeout(() => {
-      uni.switchTab({
+      // uni.switchTab({
+      //   url: "/pages/our/index",
+      // });
+      uni.reLaunch({
         url: "/pages/our/index",
-      });
+      })
     }, 1498);
   },
   methods: {},
