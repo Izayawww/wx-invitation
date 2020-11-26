@@ -159,23 +159,17 @@
         </view>
       </swiper-item> -->
     </swiper>
-    <!-- <button @click="pause">暂停</button>
-    <button @click="handleMusicPlay">下一首</button>-->
+    <music-icon/>
   </view>
 </template>
 
 <script>
-const innerAudioContext = uni.createInnerAudioContext();
 export default {
   data() {
     return {
       title: "Hello",
       currentIdx: 0,
       currentSwipte: 0,
-      // musics: [
-      //   "http://m8.music.126.net/20200115150755/b524d22ee808d96cda6dae0f00d9fe8f/ymusic/bdb6/4eb6/aabd/26e833f3fe2e76237b2ef5f815077ffb.mp3",
-      //   "http://m8.music.126.net/20200115154645/5b46c04dc1ffaf8a0fbd1b8abe823910/ymusic/0459/045c/520c/330c359473365e50a368ef0d43bc612f.mp3",
-      // ],
       baseImgUrl:
         "https://izaya-1256042946.cos.ap-chengdu.myqcloud.com/wedding/",
       latitude: 39.909,
@@ -196,18 +190,6 @@ export default {
         console.log(res.windowHeight);
       },
     });
-    // wx.cloud
-    //   .callFunction({
-    //     name: "functions"
-    //   })
-    //   .then(res => {
-    //     console.log(res);
-    //      res.result.musics.data
-    //   });
-    // innerAudioContext.src = this.musics[0];
-    // innerAudioContext.onEnded = this.handleMusicPlay;
-    // innerAudioContext.autoplay = true;
-    // innerAudioContext.loop = true;
   },
   methods: {
     openLocation() {
@@ -225,18 +207,6 @@ export default {
     radioChange(e, type) {
       this.peopleInfo[type] = e.detail.value;
     },
-    // pause() {
-    //   innerAudioContext.pause();
-    // },
-    // handleMusicPlay() {
-    //   if (this.currentIdx >= this.musics.length - 1) {
-    //     this.currentIdx = 0;
-    //   } else {
-    //     ++this.currentIdx;
-    //   }
-    //   innerAudioContext.src = this.musics[this.currentIdx];
-    //   console.log(this.musics[this.currentIdx]);
-    // },
   },
 };
 </script>

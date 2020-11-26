@@ -31,7 +31,7 @@ export default {
 
 <style>
 .wy-welcome {
-  background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+  background-color: var(--bgPink);
   padding-top: 38%;
 }
 .wy-logo {

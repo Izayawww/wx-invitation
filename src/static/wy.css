@@ -1,9 +1,11 @@
 page{
+    position: relative;
     font-size: 32rpx;
     font-family: cursive;
-    --wyPink:  #ec9bad;
+    --bgPink:  #feadb9;
     --wyYzred: #f03f24;
 }
+
 
 .wy-imgview,.wy-bgview{
     height: 100%;

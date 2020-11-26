@@ -4,6 +4,7 @@
       <input
         class="text-sm sm"
         placeholder="输入祝福语,需审核"
+        maxlength="100"
         name="input"
         v-model="grettingValue"
       />
@@ -35,11 +36,11 @@
           :style="{ 'background-image': `url(${item.avatarUrl})` }"
         ></view>
         <view class="content">
-          <view class="text-grey">{{ item.nickName }}</view>
-          <view class="text-gray text-content text-df">
+          <view class="text-black">{{ item.nickName }}</view>
+          <view class="text-black text-content text-df">
             {{ item.gretting }}
           </view>
-          <view class="text-gray text-sm text-right">{{ item.time }}</view>
+          <view class="text-black text-sm text-right">{{ item.time }}</view>
         </view>
       </view>
     </view>
@@ -55,13 +56,10 @@
             @click="doCheck(item, index)"
           >
             <view class="content">
-              <view class="text-grey"
-                >{{ index + 1 }}. {{ item.nickName }}</view
-              >
-              <view class="text-gray text-content text-df">
+              <view class="text-black text-content text-df">
                 {{ item.gretting }}
               </view>
-              <view class="text-gray text-sm text-right">{{ item.time }}</view>
+              <view class="text-black text-sm text-right">{{ item.time }}</view>
             </view>
           </view>
         </view>
@@ -79,6 +77,8 @@
         </view>
       </view>
     </view>
+
+    <music-icon/>
   </view>
 </template>
 
@@ -200,7 +200,7 @@ export default {
 <style scoped>
 .wy-grettings {
   padding: 20rpx;
-  background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+  background-color: var(--bgPink);
   height: 100vh;
 }
 .wy-grettings .cu-item {
@@ -211,5 +211,8 @@ export default {
   border-radius: 55px;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 8rpx 50rpx;
+}
+.text-content{
+  padding-left: 5px;
 }
 </style>

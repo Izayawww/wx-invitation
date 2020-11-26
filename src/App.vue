@@ -1,7 +1,14 @@
 <script>
+const innerAudioContext = uni.createInnerAudioContext();
 export default {
+  globalData: {
+    innerAudioContext: innerAudioContext
+  },
   onLaunch: function () {
     console.log("App Launch");
+    innerAudioContext.src = 'https://izaya-1256042946.cos.ap-chengdu.myqcloud.com/wedding/meetyou.mp3';
+    innerAudioContext.autoplay = true;
+    innerAudioContext.loop = true;
     wx.cloud.init({
       env: "my-cloud-56f476",
     });
