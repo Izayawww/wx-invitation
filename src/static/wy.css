@@ -2,7 +2,9 @@ page{
     position: relative;
     font-size: 32rpx;
     font-family: cursive;
-    --bgPink:  #feadb9;
+    background-color: aliceblue;
+    /* #fde4e6; */
+    --bgPink: #fde4e6;
     --wyYzred: #f03f24;
 }
 

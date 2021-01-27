@@ -1,0 +1,64 @@
+/* .img-grass{
+    background-size: contain;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 300rpx;
+    height: 300rpx;
+} */
+[class*=img-grass-] {
+    background-size: contain;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 300rpx;
+    height: 300rpx;
+}
+.view-grass{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.img-grass-1 {  
+    top: -80rpx;
+    left: -30rpx;
+    transform: rotate(90deg);
+}
+.img-grass-1_right {  
+    transform: rotate(-160deg);
+    right: 0;
+    top: 20rpx;
+    z-index: 1;
+}
+.img-grass-4 {
+    top: 50%;
+    right: 0;
+}
+.img-grass-5 {
+    top: -20rpx;
+    left: 30rpx;
+    transform: rotate(90deg);
+}
+.img-grass-6 {
+    top: 60rpx;
+    transform: rotateX(-180deg);
+}
+.img-grass-6_right {  
+    transform: rotateX(-180deg) rotateY(-180deg) rotateZ(-30deg);
+    right: -20rpx;
+    top: -50rpx;
+}
+
+.img-grass-2_bottom {
+    transform: rotate(60deg);
+    bottom: 0rpx;
+    left: -40rpx;
+    width: 200rpx;
+    height: 200rpx;
+}
+.img-grass-6_bottom {
+    width: 200rpx;
+    height: 200rpx;
+    bottom: 30rpx;
+    left: -20rpx;
+    transform: rotateX(-180deg) rotateZ(20deg);
+}

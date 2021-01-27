@@ -2,62 +2,129 @@
   <view class="wy-invitaion animate__animated fadeIn">
     <swiper class="swiper photo-swiper" vertical @change="changeSwiper">
       <swiper-item>
-        <view class="swiper-item weeding-pah weeding-pah-first">
+        <view class="swiper-item weeding-pah weeding-pah-first padding-tb-xl">
           <view
-            :style="{ 'background-image': `url(${baseImgUrl}huakuang.png)` }"
+            class="wy-flowerview wy-flexCol"
             :class="[
-              'wy-bgview animate__animated ',
-              currentSwipte === 0 ? 'animate__flipInY' : '',
-            ]"
-          ></view>
-          <view
-            :class="[
-              'animate__animated padding-top-xxxl padding-bottom-xl animate__delay-1s',
-              currentSwipte === 0 ? 'animate__flipInX' : '',
+              'bg-flower animate__animated',
+              currentSwipte === 0 ? 'animate__slideInDown' : '',
             ]"
           >
-            <text class="text-black">汪** & 杨**</text>
-          </view>
-
-          <view class="wy-flowerview wy-flexCol padding-top-xxl">
             <image
               :src="`${baseImgUrl}flower3.png`"
               :class="[
-                'bg-flower animate__animated ',
-                currentSwipte === 0 ? 'animate__rotateIn' : '',
-              ]"></image>
-            <view
-              :class="[
-                'animate__animated animate__slow',
-                currentSwipte === 0 ? 'animate__flipInX' : '',
-              ]"
-              >婚礼</view>
-            <view
-              :class="[
-                'animate__animated animate__slow',
-                currentSwipte === 0 ? 'animate__flipInX' : '',
-              ]"
-              >邀请</view>
-          </view>
-          <view>
-            <!-- <view
-              :class="[
-                'animate__animated animate__delay-1_6s',
+                'bg-flower animate__animated',
                 currentSwipte === 0 ? 'animate__zoomIn' : '',
               ]"
-              >谨定于</view> -->
+            ></image>
             <view
               :class="[
-                'animate__animated  padding-top-xxl padding-bottom-sm animate__delay-2s',
+                'bg-img bd-radius animate__animated animate__delay-0_3s',
+                currentSwipte === 0 ? 'animate__zoomIn' : '',
+              ]"
+              :style="{ 'background-image': `url(${baseImgUrl}wy2.jpeg)` }"
+            ></view>
+          </view>
+          <!-- 左上角植物 -->
+          <view
+            :class="[
+              'view-grass animate__animated animate__slow',
+              currentSwipte === 0 ? 'animate__slideInLeft' : '',
+            ]"
+          >
+            <view
+              class="img-grass-1"
+              :style="{ 'background-image': `url(${baseImgUrl}grass1.png)` }"
+            ></view>
+            <view
+              class="img-grass-5"
+              :style="{ 'background-image': `url(${baseImgUrl}grass5.png)` }"
+            ></view>
+            <view
+              class="img-grass-6"
+              :style="{ 'background-image': `url(${baseImgUrl}grass6.png)` }"
+            ></view>
+          </view>
+          <!-- 左上角植物end -->
+          <!-- 右上角植物 -->
+          <view
+            :class="[
+              'view-grass animate__animated animate__slow',
+              currentSwipte === 0 ? 'animate__slideInRight' : '',
+            ]"
+          >
+            <view
+              class="img-grass-1_right"
+              :style="{ 'background-image': `url(${baseImgUrl}grass1.png)` }"
+            ></view>
+            <view
+              class="img-grass-6_right"
+              :style="{ 'background-image': `url(${baseImgUrl}grass6.png)` }"
+            ></view>
+          </view>
+          <!-- 右上角植物end -->
+          <!-- 右中间植物 -->
+          <view
+            :class="[
+              'view-grass animate__animated',
+              currentSwipte === 0 ? 'animate__slideInRight' : '',
+            ]"
+          >
+            <view
+              class="img-grass-4"
+              :style="{ 'background-image': `url(${baseImgUrl}grass4.png)` }"
+            ></view>
+          </view>
+          <!-- 右中间植物end -->
+
+          <!-- 左下角植物 -->
+          <view
+            :class="[
+              'view-grass animate__animated animate__slow',
+              currentSwipte === 0 ? 'animate__slideInLeft' : '',
+            ]"
+          >
+            <view
+              class="img-grass-2_bottom"
+              :style="{ 'background-image': `url(${baseImgUrl}grass2.png)` }"
+            ></view>
+            <view
+              class="img-grass-6_bottom"
+              :style="{ 'background-image': `url(${baseImgUrl}grass6.png)` }"
+            ></view>
+          </view>
+          <!-- 左下角植物end -->
+
+          <view>
+            <view
+              :class="[
+                'animate__animated padding-top animate__delay-1s',
+                currentSwipte === 0 ? 'animate__flipInX' : '',
+              ]"
+            >
+              <text class="text-black">汪** ♥ 杨**</text>
+            </view>
+            <view
+              :class="[
+                'animate__animated padding-top animate__delay-1_6s',
+                currentSwipte === 0 ? 'animate__zoomIn' : '',
+              ]"
+              >特邀您</view
+            >
+            <view
+              :class="[
+                'animate__animated padding-top animate__delay-2s',
                 currentSwipte === 0 ? 'animate__lightSpeedInLeft' : '',
               ]"
-              >2021年5月20日 13时14分</view>
+              >2021年5月20日 13时14分</view
+            >
             <view
               :class="[
-                'animate__animated animate__delay-2_6s',
+                'animate__animated padding-top animate__delay-2_6s',
                 currentSwipte === 0 ? 'animate__lightSpeedInRight' : '',
               ]"
-              >景德镇市伊隆大酒店举行婚礼</view>
+              >景德镇市伊隆大酒店举行婚礼</view
+            >
           </view>
           <!-- <view
             :class="[
@@ -99,21 +166,24 @@
                 currentSwipte === 1 ? 'animate__fadeInDown' : '',
               ]"
               :src="`${baseImgUrl}heart3.png`"
-              mode="aspectFill"></image>
+              mode="aspectFill"
+            ></image>
             <image
               :class="[
                 'wy-hunsha animate__animated',
                 currentSwipte === 1 ? 'animate__zoomIn' : '',
               ]"
               :src="`${baseImgUrl}hunsha3.jpeg`"
-              mode="aspectFill"></image>
+              mode="aspectFill"
+            ></image>
             <image
               :class="[
                 'wy-smicon wy-abs_btmright animate__animated',
                 currentSwipte === 1 ? 'animate__fadeInUp' : '',
               ]"
               :src="`${baseImgUrl}heart3.png`"
-              mode="aspectFill"></image>
+              mode="aspectFill"
+            ></image>
           </view>
         </view>
       </swiper-item>
@@ -122,21 +192,27 @@
           <view class="cu-chat height-100">
             <view class="flex height-50">
               <view
-                :class="['flex-sub animate__animated wy-imgview margin-sm',
+                :class="[
+                  'flex-sub animate__animated wy-imgview margin-sm',
                   currentSwipte === 2 ? 'animate__rotateInDownLeft' : '',
                 ]"
-                :style="{ 'background-image': `url(${baseImgUrl}wy1.jpeg)` }"></view>
+                :style="{ 'background-image': `url(${baseImgUrl}wy1.jpeg)` }"
+              ></view>
               <view
-                :class="['flex-sub animate__animated wy-imgview margin-sm animate__delay-1s',
+                :class="[
+                  'flex-sub animate__animated wy-imgview margin-sm animate__delay-1s',
                   currentSwipte === 2 ? 'animate__rotateInDownRight' : '',
                 ]"
-                :style="{ 'background-image': `url(${baseImgUrl}wy2.jpeg)` }"></view>
+                :style="{ 'background-image': `url(${baseImgUrl}wy2.jpeg)` }"
+              ></view>
             </view>
             <view
-              :class="['animate__animated wy-imgview margin-sm animate__delay-1_6s',
+              :class="[
+                'animate__animated wy-imgview margin-sm animate__delay-1_6s',
                 currentSwipte === 2 ? 'animate__zoomInUp' : '',
               ]"
-              :style="{ 'background-image': `url(${baseImgUrl}wy3.jpeg)` }"></view>
+              :style="{ 'background-image': `url(${baseImgUrl}wy3.jpeg)` }"
+            ></view>
           </view>
         </view>
       </swiper-item>
@@ -159,7 +235,7 @@
         </view>
       </swiper-item> -->
     </swiper>
-    <music-icon/>
+    <music-icon />
   </view>
 </template>
 
@@ -212,14 +288,10 @@ export default {
 </script>
 
 <style>
+@import "./grass.css";
 .wy-invitaion {
   font-size: 42rpx;
-  background-color: #fff;
-}
-.wy-flowerview {
-  position: relative;
-  height: 200rpx;
-  color: #333333;
+  /* background-color: #fff; */
 }
 .wy-imgcontent {
   position: relative;
@@ -235,7 +307,36 @@ export default {
   right: 8rpx;
   transform: rotate(20deg);
 }
-.swiper-item{
+.weeding-pah-first {
+  display: flex;
+  flex-direction: column;
+}
+.wy-flowerview {
+  position: relative;
+  color: #333333;
+  min-height: 460rpx;
+  z-index: 1;
+}
+.wy-flowerview .bg-flower {
+  position: absolute;
+  width: 360rpx;
+  height: 360rpx;
+}
+.wy-flowerview .bg-img {
+  position: absolute;
+  width: 260rpx;
+  height: 260rpx;
+}
+.photo-swiper {
+  height: 100vh;
+}
+.weeding-pah {
+  text-align: center;
+}
+.bd-radius {
+  border-radius: 50%;
+}
+.swiper-item {
   height: 100%;
 }
 .swiper-item .wy-smicon {
@@ -247,22 +348,4 @@ export default {
   height: 800rpx;
   border-radius: 50% / 50% 0;
 }
-.wy-flowerview .bg-flower {
-  position: absolute;
-  width: 200rpx;
-  height: 200rpx;
-}
-.photo-swiper {
-  height: 100vh;
-}
-.weeding-pah {
-  text-align: center;
-}
-
-/* .weeding-pah-first {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-} */
 </style>

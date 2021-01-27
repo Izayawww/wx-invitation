@@ -48,6 +48,11 @@ page {
     animation-iteration-count        : calc(var(--animate-repeat)*3)
 }
 
+.animate__animated.animate__delay-0_3s {
+    -webkit-animation-delay: .3s;
+    animation-delay        : .3s;
+}
+
 .animate__animated.animate__delay-1s {
     -webkit-animation-delay: 1s;
     animation-delay        : 1s;

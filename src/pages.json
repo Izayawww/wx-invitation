@@ -1,13 +1,13 @@
 {
 	"pages": [
 		{
+			"path": "pages/index/index"
+		},
+		{
 			"path": "pages/greetings/index",
 			"style": {
 				"navigationBarTitleText": "祝福"
 			}
-		},
-		{
-			"path": "pages/index/index"
 		},
 		{
 			"path": "pages/our/index",

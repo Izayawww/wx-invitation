@@ -3202,6 +3202,10 @@ scroll-view.cu-steps .cu-item {
 	padding-top: 180rpx;
 }
 
+.margin-top-xxxl {
+	margin-top: 180rpx;
+}
+
 .padding-right-xs {
 	padding-right: 10rpx;
 }
